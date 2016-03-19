@@ -37,6 +37,15 @@ namespace ASCII_RPG
             DelObj(obj);
             return Out;
         }
+        public string ShowAttack(Attack atk, Position2D pos)
+        {
+            foreach (Position2D p in atk.Tamplate)
+                AddObj(new MapObject(p + pos, '*'));
+            string Out = ToString();
+            for (int i = 0; i < atk.Tamplate.Count(); i++)
+                _mapObjects.Remove(_mapObjects.Last());
+            return Out;
+        }
         public override string ToString()
         {
             StringBuilder[] TempStr = new StringBuilder[_map.Count];
@@ -52,4 +61,37 @@ namespace ASCII_RPG
             return Out;
         }
     }
+
+    class MapObject : IDisplayed
+    {
+        private char _avatar;
+        private Position2D _pos;
+
+        public MapObject(Position2D pos, char avatar)
+        {
+            _pos = pos;
+            _avatar = avatar;
+        }
+        public char Avatar
+        {
+            get
+            {
+                return _avatar;
+            }
+        }
+
+        public Position2D Position
+        {
+            get
+            {
+                return _pos;
+            }
+
+            set
+            {
+                _pos = value;
+            }
+        }
+    }
+
 }

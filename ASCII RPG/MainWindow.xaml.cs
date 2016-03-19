@@ -48,8 +48,11 @@ namespace ASCII_RPG
                 case Key.D:
                     game.PlayerMove(1, 0);
                     break;
+                case Key.Q:
+                    game.Attack();
+                    break;
             }
-            game.Update();
+            
         }
     }
 }

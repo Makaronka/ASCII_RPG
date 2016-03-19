@@ -34,6 +34,12 @@ namespace ASCII_RPG
             _gameWindow.Map.Text = _map.ToString();
             //_gameWindow.Map.Text = _map.GetStr();
         }
+        public void Update(string NewMap)
+        {
+            _gameWindow.Map.Clear();
+            _gameWindow.Map.Text = NewMap;
+            //_gameWindow.Map.Text = _map.GetStr();
+        }
 
         public void PlayerMove(int x, int y)
         {
@@ -42,6 +48,11 @@ namespace ASCII_RPG
         public void PlayerMove(Position2D delta)
         {
             _player.Move(delta);
+            Update();
+        }
+        public void Attack()
+        {
+            Update(_map.ShowAttack(new Attack(1, new Position2D(0, -1), new Position2D(0, -2)), _player.Position));
         }
         
     }

@@ -23,5 +23,13 @@ namespace ASCII_RPG
         {
             return new Position2D(Pos1.X - Pos2.X, Pos1.Y - Pos2.Y);
         }
+        public Position2D InvertX()
+        {
+            return new Position2D(X * -1, Y );
+        }
+        public Position2D InvertY()
+        {
+            return new Position2D(X , Y * -1);
+        }
     }
 }
