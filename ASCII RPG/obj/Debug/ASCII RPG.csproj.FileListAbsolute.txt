@@ -12,3 +12,17 @@ c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debu
 c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.csproj.GenerateResource.Cache
 c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.exe
 c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.pdb
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\bin\Debug\ASCII RPG.exe.config
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.exe
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.pdb
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\bin\Debug\ASCII RPG.exe
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\bin\Debug\ASCII RPG.pdb
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.csprojResolveAssemblyReference.cache
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\MainWindow.g.cs
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\App.g.cs
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG_MarkupCompile.cache
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG_MarkupCompile.lref
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\MainWindow.baml
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.g.resources
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII_RPG.Properties.Resources.resources
+C:\Users\Igor\Documents\Visual Studio 2013\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.csproj.GenerateResource.Cache

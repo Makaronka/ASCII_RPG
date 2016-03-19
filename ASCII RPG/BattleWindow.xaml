@@ -1,0 +1,9 @@
+﻿<Window x:Name="BattleWind" x:Class="ASCII_RPG.BattleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BattleWindow" Height="360" Width="520" Loaded="BattleWind_Loaded">
+    <Grid>
+        <TextBox x:Name="BattlMapTxt" HorizontalAlignment="Left" Height="244" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="348"/>
+
+    </Grid>
+</Window>

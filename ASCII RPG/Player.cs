@@ -8,9 +8,9 @@ namespace ASCII_RPG
 {
     class Player:IDisplayed
     {
-        private Position2D _pos;//Player position
-        private uint _hp, _maxHp, _basicStrength;
-        private char _avatar;
+        protected Position2D _pos;//Player position
+        protected uint _hp, _maxHp, _basicStrength;
+        protected char _avatar;
 
         public Player(int x, int y, char avatar = '@', uint maxHp = 25 ,uint strength = 10)
         {

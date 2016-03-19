@@ -6,21 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASCII_RPG
 {
-    //enum GameObject {Player,Enemy}
-    /*
-    struct MapObject
-    {
-        public GameObject Obj;
-        public Position2D Position;
-        private char _underChar;
-
-        public char UnderChar
-        {
-            get { return _underChar; }
-            set { _underChar = value; }
-        }
-    }
-    */
+       
     class Map2D
     {
         private readonly List<StringBuilder> _map;
@@ -33,14 +19,24 @@ namespace ASCII_RPG
             {
                 _map.Add(new StringBuilder(s));
             }
-            _mapObjects = objects.ToList();
+            _mapObjects = objects.ToList();            
         }
 
         public void AddObj(IDisplayed obj)
         {
             _mapObjects.Add(obj);
         }
-        
+        public void DelObj(IDisplayed obj)
+        {
+            _mapObjects.Remove(obj);
+        }
+        public string ShowObj(IDisplayed obj)
+        {
+            AddObj(obj);
+            string Out = ToString();
+            DelObj(obj);
+            return Out;
+        }
         public override string ToString()
         {
             StringBuilder[] TempStr = new StringBuilder[_map.Count];

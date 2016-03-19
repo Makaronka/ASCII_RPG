@@ -16,7 +16,7 @@ namespace ASCII_RPG
         char Avatar
         {
             get;
-            set;
+            //set;
         }
     }
 }
