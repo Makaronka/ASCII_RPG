@@ -1,0 +1,14 @@
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\bin\Debug\ASCII RPG.exe.config
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\bin\Debug\ASCII RPG.exe
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\bin\Debug\ASCII RPG.pdb
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.csprojResolveAssemblyReference.cache
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\MainWindow.g.cs
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\App.g.cs
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG_MarkupCompile.cache
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG_MarkupCompile.lref
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\MainWindow.baml
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.g.resources
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII_RPG.Properties.Resources.resources
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.csproj.GenerateResource.Cache
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.exe
+c:\users\igor\documents\visual studio 2015\Projects\ASCII RPG\ASCII RPG\obj\Debug\ASCII RPG.pdb
