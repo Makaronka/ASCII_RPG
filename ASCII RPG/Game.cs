@@ -25,7 +25,7 @@ namespace ASCII_RPG
         {
             _gameWindow = mainWindow;
             _player = new Player(new Position2D(2, 3));
-            _map = new Map2D(File.ReadAllLines(MapFile),_player);
+            _map = new Map2D(File.ReadAllLines(MapFile), _player);
             Update();
         }
         public void Update()
@@ -47,13 +47,15 @@ namespace ASCII_RPG
         }
         public void PlayerMove(Position2D delta)
         {
-            _player.Move(delta);
+            if (_map.GetChar(_player.Position + delta) != '#')
+                _player.Move(delta);
             Update();
         }
-        public void Attack()
+        public void Attack(Direction dir = Direction.up)
         {
-            Update(_map.ShowAttack(new Attack(1, new Position2D(0, -1), new Position2D(0, -2)), _player.Position));
+            Update(_map.ShowAttack(new Attack(1, new Position2D(0, -1), new Position2D(0, -2)).Turn(dir), _player.Position));
+            //Update();
         }
-        
+
     }
 }

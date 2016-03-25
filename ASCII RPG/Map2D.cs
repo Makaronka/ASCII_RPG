@@ -6,20 +6,25 @@ using System.Threading.Tasks;
 
 namespace ASCII_RPG
 {
-       
+
     class Map2D
     {
         private readonly List<StringBuilder> _map;
         private List<IDisplayed> _mapObjects;
 
-        public Map2D(string[] map,params IDisplayed[] objects)
+        public Map2D(string[] map, params IDisplayed[] objects)
         {
             _map = new List<StringBuilder>();
             foreach (string s in map)
             {
                 _map.Add(new StringBuilder(s));
             }
-            _mapObjects = objects.ToList();            
+            _mapObjects = objects.ToList();
+        }
+
+        public char GetChar(Position2D pos)
+        {
+            return _map[pos.Y][pos.X];
         }
 
         public void AddObj(IDisplayed obj)
@@ -54,7 +59,8 @@ namespace ASCII_RPG
             string Out = "";
             foreach (IDisplayed obj in _mapObjects)
             {
-                TempStr[obj.Position.Y][obj.Position.X] = obj.Avatar;
+                if (obj.Position.X >= 0 && obj.Position.Y >= 0)
+                    TempStr[obj.Position.Y][obj.Position.X] = obj.Avatar;
             }
             foreach (StringBuilder s in TempStr)
                 Out += s + "\n";
