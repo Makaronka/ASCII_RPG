@@ -59,7 +59,7 @@ namespace ASCII_RPG
             string Out = "";
             foreach (IDisplayed obj in _mapObjects)
             {
-                if (obj.Position.X >= 0 && obj.Position.Y >= 0)
+                if (obj.Position.X >= 0 && obj.Position.Y >= 0 && obj.Position.X < _map[0].Length && obj.Position.Y < _map.Count)
                     TempStr[obj.Position.Y][obj.Position.X] = obj.Avatar;
             }
             foreach (StringBuilder s in TempStr)
