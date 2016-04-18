@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace ASCII_RPG
@@ -9,15 +10,15 @@ namespace ASCII_RPG
 
     class Map2D
     {
-        private readonly List<StringBuilder> _map;
+        private readonly StringBuilder[] _map;
         private List<IDisplayed> _mapObjects;
 
         public Map2D(string[] map, params IDisplayed[] objects)
         {
-            _map = new List<StringBuilder>();
-            foreach (string s in map)
+            _map = new StringBuilder[map.Length];
+            for (int i = 0; i < map.Length; i++)
             {
-                _map.Add(new StringBuilder(s));
+                _map[i] = new StringBuilder(map[i]);
             }
             _mapObjects = objects.ToList();
         }
@@ -66,13 +67,13 @@ namespace ASCII_RPG
         }
         public override string ToString()
         {
-            StringBuilder[] TempStr = new StringBuilder[_map.Count];
+            StringBuilder[] TempStr = new StringBuilder[_map.Length];
             for (int i = 0; i < TempStr.Length; i++)
                 TempStr[i] = new StringBuilder(_map[i].ToString());
             string Out = "";
             foreach (IDisplayed obj in _mapObjects)
             {
-                if (obj.Position.X >= 0 && obj.Position.Y >= 0 && obj.Position.X < _map[0].Length && obj.Position.Y < _map.Count)
+                if (obj.Position.X >= 0 && obj.Position.Y >= 0 && obj.Position.X < _map[0].Length && obj.Position.Y < _map.Length)
                     TempStr[obj.Position.Y][obj.Position.X] = obj.Avatar;
             }
             foreach (StringBuilder s in TempStr)
