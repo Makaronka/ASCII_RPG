@@ -19,6 +19,20 @@ namespace ASCII_RPG
         {
             return new Position2D(Pos1.X + Pos2.X, Pos1.Y + Pos2.Y);
         }
+        public static bool operator ==(Position2D Pos1, Position2D Pos2)
+        {
+            if (Pos1.X == Pos2.X && Pos1.Y == Pos2.Y)
+                return true;
+            else
+                return false;
+        }
+        public static bool operator !=(Position2D Pos1, Position2D Pos2)
+        {
+            if (Pos1.X != Pos2.X || Pos1.Y != Pos2.Y)
+                return true;
+            else
+                return false;
+        }
         public static Position2D operator -(Position2D Pos1, Position2D Pos2)
         {
             return new Position2D(Pos1.X - Pos2.X, Pos1.Y - Pos2.Y);

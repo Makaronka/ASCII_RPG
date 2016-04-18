@@ -42,3 +42,19 @@ C:\Users\Igor\Documents\Visual Studio 2015\Projects\ASCII_RPG\ASCII RPG\obj\Debu
 C:\Users\Igor\Documents\Visual Studio 2015\Projects\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.g.resources
 C:\Users\Igor\Documents\Visual Studio 2015\Projects\ASCII_RPG\ASCII RPG\obj\Debug\ASCII_RPG.Properties.Resources.resources
 C:\Users\Igor\Documents\Visual Studio 2015\Projects\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.csproj.GenerateResource.Cache
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\bin\Debug\ASCII RPG.exe.config
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.exe
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.pdb
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\bin\Debug\ASCII RPG.exe
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\bin\Debug\ASCII RPG.pdb
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.csprojResolveAssemblyReference.cache
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\BattleWindow.baml
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\BattleWindow.g.cs
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\MainWindow.g.cs
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\App.g.cs
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG_MarkupCompile.cache
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG_MarkupCompile.lref
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\MainWindow.baml
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.g.resources
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII_RPG.Properties.Resources.resources
+D:\Users\fomin.id\Desktop\ASCII_RPG\ASCII RPG\obj\Debug\ASCII RPG.csproj.GenerateResource.Cache

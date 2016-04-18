@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ASCII_RPG"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="640" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+        Title="MainWindow" Height="524.651" Width="640" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
     <Grid>
-        <TextBox x:Name="Map" HorizontalAlignment="Left" Height="339" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="473" Text="Map" FontFamily="Consolas"/>
+        <TextBox x:Name="Map" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Text="Map" FontFamily="Andale Mono" FontSize="16"/>
     </Grid>
 </Window>

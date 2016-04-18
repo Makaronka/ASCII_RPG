@@ -10,10 +10,10 @@ namespace ASCII_RPG
 
     class Attack
     {
-        uint _basicDamage;
+        short _basicDamage;
         Position2D[] _template;
 
-        public Attack(uint damage, params Position2D[] tmpl)
+        public Attack(short damage, params Position2D[] tmpl)
         {
             _basicDamage = damage;
             _template = tmpl;
@@ -22,6 +22,11 @@ namespace ASCII_RPG
         public Position2D[] Tamplate
         {
             get { return _template; }
+        }
+
+        public short Damage
+        {
+            get { return _basicDamage; }
         }
         public Attack Turn(Direction dir)
         {

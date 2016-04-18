@@ -72,7 +72,9 @@
     <Compile Include="BattleWindow.xaml.cs">
       <DependentUpon>BattleWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Enemy.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="IBeated.cs" />
     <Compile Include="IDisplayed.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

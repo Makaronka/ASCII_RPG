@@ -24,6 +24,9 @@ namespace ASCII_RPG
 
         public char GetChar(Position2D pos)
         {
+            foreach (IDisplayed obj in _mapObjects)
+                if (obj.Position == pos)
+                    return obj.Avatar;
             return _map[pos.Y][pos.X];
         }
 
@@ -35,11 +38,21 @@ namespace ASCII_RPG
         {
             _mapObjects.Remove(obj);
         }
-        public string ShowObj(IDisplayed obj)
+        public List<IDisplayed> GetEnemis()
         {
-            AddObj(obj);
+            List<IDisplayed> outList = new List<IDisplayed>();
+            foreach (IDisplayed obj in _mapObjects)
+                if(obj is Enemy)
+                    outList.Add(obj);
+            return outList;
+        }
+        public string ShowObj(params IDisplayed[] objs)
+        {
+            foreach (IDisplayed obj in objs)
+                AddObj(obj);
             string Out = ToString();
-            DelObj(obj);
+            foreach (IDisplayed obj in objs)
+                DelObj(obj);
             return Out;
         }
         public string ShowAttack(Attack atk, Position2D pos)

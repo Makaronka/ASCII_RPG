@@ -18,26 +18,26 @@ namespace ASCII_RPG
 {
     class Game
     {
-        private MainWindow _gameWindow;
+        private TextBox _gameWindow;
         private Map2D _map;
         public Player _player;
-        public Game(MainWindow mainWindow, string MapFile)
+        public Game(TextBox Map, string MapFile)
         {
-            _gameWindow = mainWindow;
+            _gameWindow = Map;
             _player = new Player(new Position2D(2, 3));
             _map = new Map2D(File.ReadAllLines(MapFile), _player);
             Update();
         }
         public void Update()
         {
-            _gameWindow.Map.Clear();
-            _gameWindow.Map.Text = _map.ToString();
+            _gameWindow.Clear();
+            _gameWindow.Text = _map.ToString();
             //_gameWindow.Map.Text = _map.GetStr();
         }
         public void Update(string NewMap)
         {
-            _gameWindow.Map.Clear();
-            _gameWindow.Map.Text = NewMap;
+            _gameWindow.Clear();
+            _gameWindow.Text = NewMap;
             //_gameWindow.Map.Text = _map.GetStr();
         }
 
@@ -47,14 +47,39 @@ namespace ASCII_RPG
         }
         public void PlayerMove(Position2D delta)
         {
-            if (_map.GetChar(_player.Position + delta) != '#')
+            if (_map.GetChar(_player.Position + delta) == '$')
+            {
+                BattleWindow bttl = new BattleWindow();
+                bttl.ShowDialog();
+            }
+            if (_map.GetChar(_player.Position + delta) != '#' && _map.GetChar(_player.Position + delta) != 'e')
                 _player.Move(delta);
             Update();
         }
         public void Attack(Direction dir = Direction.up)
         {
-            Update(_map.ShowAttack(new Attack(1, new Position2D(0, -1), new Position2D(0, -2)).Turn(dir), _player.Position));
+            Attack atk = _player.MainAttack.Turn(dir);
+            foreach (Position2D pos in atk.Tamplate)
+                foreach (IDisplayed obj in _map.GetEnemis())
+                    if (obj.Position == pos + _player.Position)
+                        if (obj is IBeated)
+                        {
+                            (obj as IBeated).getDamage(atk.Damage);
+                            if ((obj as IBeated).Hp == 0)
+                                _map.DelObj(obj);
+                        }
+
+            Update(_map.ShowAttack(atk, _player.Position));
             //Update();
+        }
+
+        public void AddObj(IDisplayed obj)
+        {
+            _map.AddObj(obj);
+        }
+        public void DelObj(IDisplayed obj)
+        {
+            _map.DelObj(obj);
         }
 
     }

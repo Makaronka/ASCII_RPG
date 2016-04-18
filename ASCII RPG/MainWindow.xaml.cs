@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using System.Windows.Threading;
 
 namespace ASCII_RPG
 {
@@ -26,18 +28,19 @@ namespace ASCII_RPG
             InitializeComponent();
         }
 
+       
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Map.IsReadOnly = true;
-            game = new Game(this,"TestMap.txt");
+            game = new Game(this.Map,"TestMap.txt");
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            
             switch (e.Key)
             {
-                case Key.W : game.PlayerMove(0, -1);
+                case Key.W: game.PlayerMove(0, -1);
                     break;
                 case Key.S:
                     game.PlayerMove(0, 1);
@@ -60,8 +63,22 @@ namespace ASCII_RPG
                 case Key.Right:
                     game.Attack(Direction.right);
                     break;
-            }
-            //game.Update();
-        }
+            } 
+        }            
     }
+        /*
+        public static void DoEvents()
+        {
+            Application.Current.Dispatcher.Invoke(DispatcherPriority.Background,
+                                                  new Action(delegate { }));
+        }
+
+        private void _pause(int value)
+        {
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            while (sw.ElapsedMilliseconds < value)
+                DoEvents();
+        }
+        */
 }
